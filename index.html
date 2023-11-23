@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.relative{
+            position: relative;
+            left: 30px;
+            border: 5px solid brown;
+        }
+        div.static{
+            position: static;
+            border: 5px solid black;
+        }
+        div.fixed{
+            position: fixed;
+            border: 5px solid rebeccapurple;
+            width: 300px;
+            bottom: 30px;
+            right: 30px;
+        }
+        div.absolute{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top: 80px;
+            border: 3px solid teal;
+            right: 0;
+        }
+        div.sticky{
+            border: 3px solid rosybrown;
+            position: sticky;
+            background-color: blueviolet;
+            padding: 6px;
+            top: 0;
+            position: -webkit-sticky;
+        }
+    </style>
+</head>
+<body>
+    <h2>Position relative</h2>
+    <p>An element with position: relative; is positioned relative to its normal position:</p>
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+    <h1>Position static</h1>
+    <div class="static">
+        This element with position: static;
+    </div>
+    <h1>Position fixed</h1>
+    <div class="fixed">
+        This element with position: fixed;
+
+    </div>
+    <h2>Position absolute</h2>
+    <div class="absolute">
+        This element with position: absolute;
+    </div>
+    <p>Try to <b>scroll<b>inside this frame to understand how sticky positioning works.</b></p>
+    <div class="sticky">
+        I m sticky!
+    </div>
+    <div style="padding-bottom: 2000px;">
+        <p>Now to compose a text Lorem Ipsum is much more fun!</p>
+
+           <p> In fact, inserting any fantasy text or a famous text, be it a poe</p>
+           <p>Scroll back up to remove the stickyness.</p>
+           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+    </div>
+</body>
+</html>
